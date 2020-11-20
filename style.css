@@ -1,1 +1,52 @@
-    
+    body {
+        margin: 0;
+        background-color: #141313;
+    }
+
+    #display{
+        color: white;
+        font-family: "Share Tech Mono";
+        font-size: 6em;
+        margin: 0; 
+    }
+
+    #timer-container{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        height: 300px;
+        width: 850px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    #buttons{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #buttons > button {
+        font-family: "Share Tech Mono";
+        font-size: 24px;
+        background-color: transparent;
+        color: rgb(91, 169, 241);
+        margin: 10px 10px;
+        padding:10px 20px;
+        border: 2px solid rgb(91, 169, 241);
+        border-radius: 100000px;
+        outline: none;
+        
+    }
+
+    #buttons > button:hover {
+        cursor: pointer;
+        background-color: rgb(91, 169, 241);
+        color: white;
+        transition: 0.3s;
+    }
